@@ -1,0 +1,38 @@
+.mission{
+    padding: 4rem;
+    background: #fff;
+    display: flex;
+    /* margin: 20px; */
+    /* flex-flow: column;
+    align-items: center; */
+    /* max-width: 1120px;
+    width: 90%;
+    margin: 0 auto; */
+}
+
+.who{
+    margin-left: 40px;
+   
+}
+.people{
+   margin-left: 40px;
+     
+  
+}
+.people-icon{
+  margin-left: 30px;
+  /* color: black; */
+  background-color: #F2F2F2;
+   box-shadow: 0 10px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 20px 30px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border: 1px solid #DCDCDC;
+  border-width: 30px;
+  border-width: 30px;
+  border-radius: 50px;
+
+}
+.people-icon:hover {
+  transform: scale(1.1);
+}
+/* cd */
