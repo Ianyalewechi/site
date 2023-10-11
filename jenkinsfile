@@ -9,8 +9,8 @@ pipeline {
         stage('Get Checkout') {
             steps {
                 
-                git branch: 'main', credentialsId: 'Mygithubcred', url: 'https://github.com/Ianyalewechi/Galitech-website.git'
-               // git branch:'main',url:'https://github.com/Ianyalewechi/site.git'
+            //git branch: 'main', credentialsId: 'Mygithubcred', url: 'https://github.com/Ianyalewechi/Galitech-website.git'
+               git branch:'main',url:'https://github.com/Ianyalewechi/site.git'
             }
         }
         
@@ -42,7 +42,7 @@ pipeline {
                 // Kill any process occupying port 8090
                 //sh "sudo kill -9 \$(sudo lsof -t -i:8090)"
                 // Run the Docker container
-                sh "docker run -itd -p 9090:80 ikedi/galitech-website:${BUILD_NUMBER}"
+                sh "docker run -itd -p 9090:80 ikedi/site:${BUILD_NUMBER}"
             }
         }
 
